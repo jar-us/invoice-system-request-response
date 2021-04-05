@@ -1,0 +1,132 @@
+{
+    "detail": {
+        "invoice_number": "123",
+        "invoice_date": "2018-11-12",
+        "invoice_time": "Military Time",
+        "payment": {
+            "due_date": "2018-11-22"
+        }
+    },
+    "invoicer": {
+        "name": {
+            "first_name": "Suraj",
+            "last_name": "Sharma"
+        },
+        "address": {
+            "shopName": "Bengal Sweets",
+            "shopNumber": "123",
+            "area": "BTM stage 1",
+            "district": "Bengaluru",
+            "state": "KA",
+            "postal_code": "560029",
+            "country_code": "IN"
+        },
+        "email_address": "merchant@example.com",
+        "phones": [
+            {
+                "country_code": "001",
+                "national_number": "4085551234",
+                "phone_type": "MOBILE"
+            }
+        ],
+        "additional_notes": "2-4"
+    },
+    "recipients": [
+        {
+            "billing_info": {
+                "name": {
+                    "first_name": "Stephanie",
+                    "last_name": "Meyers"
+                },
+                "email_address": "bill-me@example.com",
+                "phones": [
+                    {
+                        "country_code": "001",
+                        "national_number": "4884551234",
+                        "phone_type": "HOME"
+                    }
+                ]
+            },
+            "shipping_info": {
+                "name": {
+                    "first_name": "Stephanie",
+                    "last_name": "Meyers"
+                },
+                "address": {
+                    "houseNumber": "1234 Main Street",
+                    "streetNumber": "Anytown",
+                    "area": "CA",
+                    "district":"Bengaluru",
+                    "state":"KA",
+                    "postal_code": "98765",
+                    "country_code": "US"
+                }
+            },
+            "recipient":"primary"
+        }
+    ],
+    "items": [
+        {
+            "name": "Yoga Mat",
+            "description": "Elastic mat to practice yoga.",
+            "quantity": "1",
+            "unit_amount": {
+                "currency_code": "INR",
+                "value": "50.00"
+            },
+            "tax": {
+                "name": "Sales Tax",
+                "percent": "7.25"
+            },
+            "discount": {
+                "percent": "5"
+            },
+            "unit_of_measure": "QUANTITY"
+        },
+        {
+            "name": "Yoga t-shirt",
+            "quantity": "1",
+            "unit_amount": {
+                "currency_code": "USD",
+                "value": "10.00"
+            },
+            "tax": {
+                "name": "Sales Tax",
+                "percent": "7.25"
+            },
+            "discount": {
+                "amount": {
+                    "currency_code": "USD",
+                    "value": "5.00"
+                }
+            },
+            "unit_of_measure": "QUANTITY"
+        }
+    ],
+    "amount": {
+        "breakdown": {
+            "custom": {
+                "label": "Packing Charges",
+                "amount": {
+                    "currency_code": "USD",
+                    "value": "10.00"
+                }
+            },
+            "shipping": {
+                "amount": {
+                    "currency_code": "USD",
+                    "value": "10.00"
+                },
+                "tax": {
+                    "name": "Sales Tax",
+                    "percent": "7.25"
+                }
+            },
+            "discount": {
+                "invoice_discount": {
+                    "percent": "5"
+                }
+            }
+        }
+    }
+}
