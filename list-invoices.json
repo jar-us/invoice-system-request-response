@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "INV2-Z56S-5LLA-Q52L-CPZ5",
+      "status": "DRAFT",
+      "detail": {
+        "invoice_number": "#123",
+        "invoice_date": "2018-11-12",
+        "currency_code": "USD", 
+        "payment": {
+          "due_date": "2018-11-22"
+        }
+      },
+      "invoicer": {
+        "email_address": "merchant@example.com"
+      },
+      "recipients": [
+        {
+          "billing_info": {
+            "email_address": "bill-me@example.com"
+          },
+		  "recipient":"primary"
+        }
+      ],
+      "amount": {
+        "currency_code": "USD",
+        "value": "74.21"
+      }
+    }
+  ]
+}
